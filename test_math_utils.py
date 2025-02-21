@@ -22,8 +22,8 @@ class TestMathUtils(unittest.TestCase):
         """
         self.assertEqual(MathUtils.subtract(1, 2), -1)
         self.assertEqual(MathUtils.subtract(1.5, 2.5), -1.0)
-        self.assertEqual(MathUtils.subtract())
-        self.assertEqual(MathUtils.subtract())
+        self.assertEqual(MathUtils.subtract(-1,1), 0)
+        self.assertEqual(MathUtils.subtract(-1.5, 1.5), 0.0)
 
 
     def divide(self):
@@ -31,4 +31,4 @@ class TestMathUtils(unittest.TestCase):
         Just divides two numbers.
         """
         self.assertEqual(MathUtils.divide(3, 5), 4)
-        self.assertEqual(MathUtils.divide)
+        self.assertEqual(MathUtils.divide(1, 2), -1)
