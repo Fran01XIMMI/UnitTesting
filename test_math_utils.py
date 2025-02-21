@@ -32,3 +32,5 @@ class TestMathUtils(unittest.TestCase):
         """
         self.assertEqual(MathUtils.divide(3, 5), 4)
         self.assertEqual(MathUtils.divide(1, 2), -1)
+        self.assertEqual(MathUtils.divide())
+        self.assertEqual(MathUtils.divide())
