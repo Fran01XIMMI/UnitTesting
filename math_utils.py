@@ -27,4 +27,23 @@ class MathUtils:
     return a / b 
   
 
-# I'll add this file as a fork method
+# Add more functions of the Utility math
+
+  @staticmethod
+  def multiply(a: int | float, b: int | float) -> float:
+
+    return a * b
+  
+  @staticmethod
+  def exponent(a: int | float, b: int | float) -> float:
+
+    return a ** b
+  
+  @staticmethod
+  def mod(a: int | float, b: int | float) -> float:
+
+    if b == 0:
+      raise ValueError("You cannot divide by zero!")
+    return a / b 
+
+    return a % b
