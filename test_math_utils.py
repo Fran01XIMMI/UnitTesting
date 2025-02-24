@@ -61,3 +61,12 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.mod(4,2), 0)
         self.assertEqual(MathUtils.mod(10, 3), 1)
         self.assertEqual(MathUtils.mod(16, 3), 1.0)
+    
+    def test_add_paramtrized(self):
+        """
+        testing the parameter of the numbers
+        """
+        test_classes = [(3,2,5), (-1,1,0), (0,0,0), (10,-10,0)]
+        for a, b, expected in test_classes:
+            with self.subTest(a=a, b=b, expected=expected):
+                self.assertEqual(MathUtils.add(a,b), expected)
